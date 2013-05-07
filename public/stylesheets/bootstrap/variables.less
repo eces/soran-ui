@@ -32,7 +32,7 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        #f0f0f0;
+@bodyBackground:        @white;
 @textColor:             @grayDark;
 
 
@@ -48,7 +48,7 @@
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          12px;
+@baseFontSize:          14px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
@@ -151,9 +151,9 @@
 
 // Sprite icons path
 // -------------------------
-@iconSpritePath:          "../images/glyphicons-halflings.png";
-@iconWhiteSpritePath:     "../images/glyphicons-halflings-white.png";
-@imagePath:   			  "../images";
+@imagePath:   			  "/assets/images";
+@iconSpritePath:          "@{imagePath}/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "@{imagePath}/glyphicons-halflings-white.png";
 
 
 // Input placeholder text color
@@ -181,10 +181,10 @@
 @navbarCollapseWidth:             979px;
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
-@navbarHeight:                    60px;
-@navbarBackgroundHighlight:       rgba(255,255,255,0.7);
-@navbarBackground:                rgba(255,255,255,0.7);//darken(@navbarBackgroundHighlight, 5%);
-@navbarBorder:                    #e4e4e4;//darken(@navbarBackground, 12%);
+@navbarHeight:                    40px;
+@navbarBackgroundHighlight:       #ffffff;
+@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
+@navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      #777;
 @navbarLinkColor:                 #777;
