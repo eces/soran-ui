@@ -13,3 +13,7 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+.sublime-workspace
+.sublime-project
+soran-ui.sublime-project
+soran-ui.sublime-workspace
