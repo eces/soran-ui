@@ -1,0 +1,274 @@
+@(title: String)
+
+@main(title) {
+<div class="container" role="content">
+  <h3>강효준의 플레이리스트</h3>
+  <hr />
+
+  <button class="btn btn-large btn-block" id="newsfeedButton">뉴스피드 열기</button>
+  <div id="newsfeed" class="row-fluid hide">
+    <ul class="thumbnails">
+      <li class="span3">
+        <div class="thumbnail">
+          <img src="http://image.bugsm.co.kr/album/images/original/3681/368185.jpg" class="img-rounded img-polaroid" />
+          <div class="caption">
+            <h4>최신곡 추천</h4>
+            <p>
+              너에게 간다 (With 김범수)
+              <br />
+              2013 월간 윤종신 Repair 5월호
+              <br />
+              윤종신
+            </p>
+            <p><a href="#" class="btn btn-primary">PLAY</a> <a href="#" class="btn">ADD TO</a></p>
+          </div>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail">
+          <img src="http://image.bugsm.co.kr/album/images/original/3684/368438.jpg" class="img-rounded img-polaroid" />
+          <div class="caption">
+            <h4>새로 나온 앨범</h4>
+            <p>The 5th Album Vol.2 [Thank You]</p>
+            <p><a href="#" class="btn btn-primary">PLAY</a> <a href="#" class="btn">ADD TO</a></p>
+          </div>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail">
+          <img src="http://image.bugsm.co.kr/artist/images/original/801072/80107247.jpg" class="img-rounded img-polaroid" />
+          <div class="caption">
+            <h4>하비누아주 단독인터뷰</h4>
+            <p>'행복한 구름'이라는 팀명의 의미처럼, 듣는 사람들에게 행복과 즐거움, 위안을 주는 따뜻한 음악. KBS '탑밴드'에도 출연하여 심사위원들의 호평을 받음</p>
+            <p><a href="#" class="btn btn-primary">MORE</a></p>
+          </div>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail">
+          <img src="http://image.bugsm.co.kr/artist/images/original/801072/80107247.jpg" class="img-rounded img-polaroid" />
+          <div class="caption">
+            <h4>하비누아주 단독인터뷰</h4>
+            <p>'행복한 구름'이라는 팀명의 의미처럼, 듣는 사람들에게 행복과 즐거움, 위안을 주는 따뜻한 음악. KBS '탑밴드'에도 출연하여 심사위원들의 호평을 받음</p>
+            <p><a href="#" class="btn btn-primary">MORE</a></p>
+          </div>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail">
+          <img src="http://image.bugsm.co.kr/album/images/original/3681/368185.jpg" class="img-rounded img-polaroid" />
+          <div class="caption">
+            <h4>최신곡 추천</h4>
+            <p>
+              너에게 간다 (With 김범수)
+              <br />
+              2013 월간 윤종신 Repair 5월호
+              <br />
+              윤종신
+            </p>
+            <p><a href="#" class="btn btn-primary">PLAY</a> <a href="#" class="btn">ADD TO</a></p>
+          </div>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail">
+          <img src="http://image.bugsm.co.kr/album/images/original/3684/368438.jpg" class="img-rounded img-polaroid" />
+          <div class="caption">
+            <h4>새로 나온 앨범</h4>
+            <p>The 5th Album Vol.2 [Thank You]</p>
+            <p><a href="#" class="btn btn-primary">PLAY</a> <a href="#" class="btn">ADD TO</a></p>
+          </div>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail">
+          <img src="http://image.bugsm.co.kr/artist/images/original/801072/80107247.jpg" class="img-rounded img-polaroid" />
+          <div class="caption">
+            <h4>하비누아주 단독인터뷰</h4>
+            <p>'행복한 구름'이라는 팀명의 의미처럼, 듣는 사람들에게 행복과 즐거움, 위안을 주는 따뜻한 음악. KBS '탑밴드'에도 출연하여 심사위원들의 호평을 받음</p>
+            <p><a href="#" class="btn btn-primary">MORE</a></p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <button class="btn btn-large btn-block" id="newsfeedButton">뉴스피드 닫기</button>
+  </div>
+
+  <table id="listen" class="table table-striped">
+    <thead>
+      <tr>
+        <td>NAME <i class="icon-caret-down"></i></td> 
+        <td>ARTIST <i class="icon-caret-down"></i></td> 
+        <td>ALBUM <i class="icon-caret-down"></i></td> 
+        <td class="count">PLAYS <i class="icon-caret-down"></i></td> 
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr id="bugs-80254427" data-music="{&quot;artist&quot;:&quot;엠씨 더 맥스(M.C the Max)&quot;,&quot;artistId&quot;:32585,&quot;albumArtist&quot;:&quot;엠씨 더 맥스(M.C the Max)&quot;,&quot;albumTitle&quot;:&quot;Somewhere Over The Rainbow Vol.2&quot;,&quot;albumId&quot;:8021039,&quot;title&quot;:&quot;사랑을 찾아서&quot;,&quot;genre&quot;:&quot;팝 &gt; 발라드 (Ballad)&quot;,&quot;len&quot;:&quot;04:18&quot;,&quot;releaseDate&quot;:&quot;20060818&quot;}" data-music-count="35" class="">
+        <td class="title">
+          <a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=80254427', 'Bugs Player', 'width=384,height=667,resizable=0'))">사랑을 찾아서</a>
+        </td>
+        <td class="artist">
+          <a href="http://music.bugs.co.kr/artist/32585">엠씨 더 맥스(M.C the Max)</a>
+        </td>
+        <td class="album">
+          <a href="http://music.bugs.co.kr/album/8021039">Somewhere Over The Rainbow Vol.2</a>
+        </td>
+        <td class="count">35</td>
+      </tr>
+      
+      <tr id="bugs-2692336" data-music="{&quot;artist&quot;:&quot;Maroon 5(마룬 파이브)&quot;,&quot;artistId&quot;:55461,&quot;albumArtist&quot;:&quot;Maroon 5(마룬 파이브)&quot;,&quot;albumTitle&quot;:&quot;Overexposed [Deluxe Edition]&quot;,&quot;albumId&quot;:333329,&quot;title&quot;:&quot;Lucky Strike&quot;,&quot;genre&quot;:&quot;팝 &gt; 팝 락 (Pop Rock), 락 &gt; 모던 락 (Modern Rock)&quot;,&quot;len&quot;:&quot;03:05&quot;,&quot;releaseDate&quot;:&quot;20120717&quot;}" data-music-count="17" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2692336', 'Bugs Player', 'width=384,height=667,resizable=0'))">Lucky Strike</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/55461">Maroon 5(마룬 파이브)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/333329">Overexposed [Deluxe Edition]</a></td><td class="count">17</td>
+      </tr>
+      
+      <tr id="bugs-2615585" data-music="{&quot;artist&quot;:&quot;버스커 버스커(Busker Busker)&quot;,&quot;artistId&quot;:80110449,&quot;albumArtist&quot;:&quot;버스커 버스커(Busker Busker)&quot;,&quot;albumTitle&quot;:&quot;버스커 버스커 1집&quot;,&quot;albumId&quot;:324696,&quot;title&quot;:&quot;꽃송이가&quot;,&quot;genre&quot;:&quot;팝 &gt; 팝 락 (Pop Rock), 락 &gt; 인디 락 (Indie Rock)&quot;,&quot;len&quot;:&quot;03:22&quot;,&quot;releaseDate&quot;:&quot;20120329&quot;}" data-music-count="20" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2615585', 'Bugs Player', 'width=384,height=667,resizable=0'))">꽃송이가</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80110449">버스커 버스커(Busker Busker)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/324696">버스커 버스커 1집</a></td><td class="count">20</td>
+      </tr>
+      
+      <tr id="bugs-1599333" data-music="{&quot;artist&quot;:&quot;소녀시대&quot;,&quot;artistId&quot;:80026432,&quot;albumArtist&quot;:&quot;Various Artists&quot;,&quot;albumTitle&quot;:&quot;베토벤 바이러스 (MBC 수목드라마)&quot;,&quot;albumId&quot;:163601,&quot;title&quot;:&quot;사랑은 선율을 타고 (Day By Day)&quot;,&quot;genre&quot;:&quot;OST  &gt; &gt; TV 드라마&quot;,&quot;len&quot;:&quot;03:53&quot;,&quot;releaseDate&quot;:&quot;20080917&quot;}" data-music-count="19" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1599333', 'Bugs Player', 'width=384,height=667,resizable=0'))">사랑은 선율을 타고 (Day By Day)</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80026432">소녀시대</a></td><td class="album"><a href="http://music.bugs.co.kr/album/163601">베토벤 바이러스 (MBC 수목드라마)</a></td><td class="count">19</td>
+      </tr>
+      
+      <tr id="bugs-2406672" data-music="{&quot;artist&quot;:&quot;투애니원(2NE1)&quot;,&quot;artistId&quot;:80054982,&quot;albumArtist&quot;:&quot;투애니원(2NE1)&quot;,&quot;albumTitle&quot;:&quot;2NE1 2nd Mini Album&quot;,&quot;albumId&quot;:294235,&quot;title&quot;:&quot;내가 제일 잘 나가&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:30&quot;,&quot;releaseDate&quot;:&quot;20110728&quot;}" data-music-count="3" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2406672', 'Bugs Player', 'width=384,height=667,resizable=0'))">내가 제일 잘 나가</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80054982">투애니원(2NE1)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/294235">2NE1 2nd Mini Album</a></td><td class="count">3</td>
+      </tr>
+      
+      <tr id="bugs-2866123" data-music="{&quot;artist&quot;:&quot;2YOON(포미닛 투윤)&quot;,&quot;artistId&quot;:80145101,&quot;albumArtist&quot;:&quot;2YOON(포미닛 투윤)&quot;,&quot;albumTitle&quot;:&quot;Harvest Moon&quot;,&quot;albumId&quot;:355048,&quot;title&quot;:&quot;24/7&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:25&quot;,&quot;releaseDate&quot;:&quot;20130117&quot;}" data-music-count="5" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2866123', 'Bugs Player', 'width=384,height=667,resizable=0'))">24/7</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80145101">2YOON(포미닛 투윤)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/355048">Harvest Moon</a></td><td class="count">5</td>
+      </tr>
+      
+      <tr id="bugs-2381342" data-music="{&quot;artist&quot;:&quot;정용화(CNBLUE)&quot;,&quot;artistId&quot;:80063327,&quot;albumArtist&quot;:&quot;Various Artists&quot;,&quot;albumTitle&quot;:&quot;넌 내게 반했어 (MBC 수목드라마) Part.1 &quot;,&quot;albumId&quot;:291657,&quot;title&quot;:&quot;넌 내게 반했어&quot;,&quot;genre&quot;:&quot;OST  &gt; &gt; TV 드라마&quot;,&quot;len&quot;:&quot;03:11&quot;,&quot;releaseDate&quot;:&quot;20110629&quot;}" data-music-count="6" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2381342', 'Bugs Player', 'width=384,height=667,resizable=0'))">넌 내게 반했어</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80063327">정용화(CNBLUE)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/291657">넌 내게 반했어 (MBC 수목드라마) Part.1 </a></td><td class="count">6</td>
+      </tr>
+      
+      <tr id="bugs-1931052" data-music="{&quot;artist&quot;:&quot;이지아&quot;,&quot;artistId&quot;:80051807,&quot;albumArtist&quot;:&quot;이지아&quot;,&quot;albumTitle&quot;:&quot;뱀파이어 로맨스 (The Vampire Romance)&quot;,&quot;albumId&quot;:217095,&quot;title&quot;:&quot;뱀파이어 로맨스 (The Vampire Romance)&quot;,&quot;genre&quot;:&quot;팝 &gt; 팝 락 (Pop Rock)&quot;,&quot;len&quot;:&quot;04:45&quot;,&quot;releaseDate&quot;:&quot;20100208&quot;}" data-music-count="1" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1931052', 'Bugs Player', 'width=384,height=667,resizable=0'))">뱀파이어 로맨스 (The Vampire Romance)</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80051807">이지아</a></td><td class="album"><a href="http://music.bugs.co.kr/album/217095">뱀파이어 로맨스 (The Vampire Romance)</a></td><td class="count">1</td>
+      </tr>
+      
+      <tr id="bugs-2787923" data-music="{&quot;artist&quot;:&quot;에픽 하이(Epik High)&quot;,&quot;artistId&quot;:65269,&quot;albumArtist&quot;:&quot;에픽 하이(Epik High)&quot;,&quot;albumTitle&quot;:&quot;Epik High 7집 '99'&quot;,&quot;albumId&quot;:345211,&quot;title&quot;:&quot;UP (feat. 박봄 Of 2NE1)&quot;,&quot;genre&quot;:&quot;랩/힙합 &gt; 힙합 (Hip-Hop), 랩/힙합 &gt; 팝-랩 (Pop-Rap)&quot;,&quot;len&quot;:&quot;03:43&quot;,&quot;releaseDate&quot;:&quot;20121019&quot;}" data-music-count="111" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2787923', 'Bugs Player', 'width=384,height=667,resizable=0'))">UP (feat. 박봄 Of 2NE1)</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/65269">에픽 하이(Epik High)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/345211">Epik High 7집 '99'</a></td><td class="count">111</td>
+      </tr>
+      
+      <tr id="bugs-9024909" data-music="{&quot;artist&quot;:&quot;Sweetbox(스위트박스)&quot;,&quot;artistId&quot;:2596,&quot;albumArtist&quot;:&quot;Sweetbox&quot;,&quot;albumTitle&quot;:&quot;Jade&quot;,&quot;albumId&quot;:9020298,&quot;title&quot;:&quot;Don't Push Me&quot;,&quot;genre&quot;:&quot;팝 &gt; 팝, 팝 &gt; 디스코 (Disco), 팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:13&quot;,&quot;releaseDate&quot;:&quot;20040720&quot;}" data-music-count="56" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=9024909', 'Bugs Player', 'width=384,height=667,resizable=0'))">Don't Push Me</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/2596">Sweetbox(스위트박스)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/9020298">Jade</a></td><td class="count">56</td>
+      </tr>
+      
+      <tr id="bugs-58518" data-music="{&quot;artist&quot;:&quot;서태지와 아이들&quot;,&quot;artistId&quot;:1458,&quot;albumArtist&quot;:&quot;서태지와 아이들&quot;,&quot;albumTitle&quot;:&quot;발해를 꿈꾸며&quot;,&quot;albumId&quot;:4062,&quot;title&quot;:&quot;제킬박사와 하이드&quot;,&quot;genre&quot;:&quot;팝 &gt; 팝, 팝 &gt; 댄스 팝 (Dance Pop), 락 &gt; 얼터너티브 메탈 (Alternative Metal)&quot;,&quot;len&quot;:&quot;05:08&quot;,&quot;releaseDate&quot;:&quot;19940810&quot;}" data-music-count="10" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=58518', 'Bugs Player', 'width=384,height=667,resizable=0'))">제킬박사와 하이드</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/1458">서태지와 아이들</a></td><td class="album"><a href="http://music.bugs.co.kr/album/4062">발해를 꿈꾸며</a></td><td class="count">10</td>
+      </tr>
+      
+      <tr id="bugs-1570303" data-music="{&quot;artist&quot;:&quot;이효리&quot;,&quot;artistId&quot;:4933,&quot;albumArtist&quot;:&quot;이효리&quot;,&quot;albumTitle&quot;:&quot;It's Hyorish&quot;,&quot;albumId&quot;:159161,&quot;title&quot;:&quot;U-Go-Girl (With 낯선)&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:08&quot;,&quot;releaseDate&quot;:&quot;20080714&quot;}" data-music-count="1" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1570303', 'Bugs Player', 'width=384,height=667,resizable=0'))">U-Go-Girl (With 낯선)</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/4933">이효리</a></td><td class="album"><a href="http://music.bugs.co.kr/album/159161">It's Hyorish</a></td><td class="count">1</td>
+      </tr>
+      
+      <tr id="bugs-2677560" data-music="{&quot;artist&quot;:&quot;Unknown&quot;,&quot;artistId&quot;:8008124,&quot;albumArtist&quot;:&quot;Various Artists&quot;,&quot;albumTitle&quot;:&quot;조용한 휴식과 함께하는 피아노 클래식&quot;,&quot;albumId&quot;:331688,&quot;title&quot;:&quot;베토벤: 피아노 소나타 14번 '월광' (Beethoven: Piano Sonata No.14 'Moonlight')&quot;,&quot;genre&quot;:&quot;클래식 &gt; 클래식, 기타 &gt; 연주 음악&quot;,&quot;len&quot;:&quot;02:28&quot;,&quot;releaseDate&quot;:&quot;20120607&quot;}" data-music-count="1" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2677560', 'Bugs Player', 'width=384,height=667,resizable=0'))">베토벤: 피아노 소나타 14번 '월광' (Beethoven: Piano Sonata No.14 'Moonlight')</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/8008124">Unknown</a></td><td class="album"><a href="http://music.bugs.co.kr/album/331688">조용한 휴식과 함께하는 피아노 클래식</a></td><td class="count">1</td>
+      </tr>
+      
+      <tr id="bugs-2586724" data-music="{&quot;artist&quot;:&quot;빅뱅(Bigbang)&quot;,&quot;artistId&quot;:80020023,&quot;albumArtist&quot;:&quot;빅뱅(Bigbang)&quot;,&quot;albumTitle&quot;:&quot;빅뱅 미니앨범 5집 'ALIVE'&quot;,&quot;albumId&quot;:322075,&quot;title&quot;:&quot;FANTASTIC BABY&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop), 랩/힙합 &gt; 힙합 (Hip-Hop)&quot;,&quot;len&quot;:&quot;03:50&quot;,&quot;releaseDate&quot;:&quot;20120229&quot;}" data-music-count="19" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2586724', 'Bugs Player', 'width=384,height=667,resizable=0'))">FANTASTIC BABY</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80020023">빅뱅(Bigbang)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/322075">빅뱅 미니앨범 5집 'ALIVE'</a></td><td class="count">19</td>
+      </tr>
+      
+      <tr id="bugs-2109767" data-music="{&quot;artist&quot;:&quot;Nari &amp; Milani(나리 &amp; 밀라니)&quot;,&quot;artistId&quot;:80059686,&quot;albumArtist&quot;:&quot;Nari &amp; Milani&quot;,&quot;albumTitle&quot;:&quot;I Got My Eye On You&quot;,&quot;albumId&quot;:243729,&quot;title&quot;:&quot;I Got My Eye On You (Cristian Marchi &amp; Paolo Sandrini Perfect Edit) (feat. Luciana) (With Cristian Marchi)&quot;,&quot;genre&quot;:&quot;일렉트로니카 &gt; 하우스 (House)&quot;,&quot;len&quot;:&quot;03:20&quot;,&quot;releaseDate&quot;:&quot;20101025&quot;}" data-music-count="6" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2109767', 'Bugs Player', 'width=384,height=667,resizable=0'))">I Got My Eye On You (Cristian Marchi &amp; Paolo Sandrini Perfect Edit) (feat. Luciana) (With Cristian Marchi)</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80059686">Nari &amp; Milani(나리 &amp; 밀라니)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/243729">I Got My Eye On You</a></td><td class="count">6</td>
+      </tr>
+      
+      <tr id="bugs-1765701" data-music="{&quot;artist&quot;:&quot;서태지&quot;,&quot;artistId&quot;:5923,&quot;albumArtist&quot;:&quot;서태지&quot;,&quot;albumTitle&quot;:&quot;8th Atomos&quot;,&quot;albumId&quot;:190081,&quot;title&quot;:&quot;Moai&quot;,&quot;genre&quot;:&quot;락 &gt; 락&quot;,&quot;len&quot;:&quot;03:46&quot;,&quot;releaseDate&quot;:&quot;20090701&quot;}" data-music-count="1" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1765701', 'Bugs Player', 'width=384,height=667,resizable=0'))">Moai</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/5923">서태지</a></td><td class="album"><a href="http://music.bugs.co.kr/album/190081">8th Atomos</a></td><td class="count">1</td>
+      </tr>
+      
+      <tr id="bugs-2678203" data-music="{&quot;artist&quot;:&quot;브로콜리너마저&quot;,&quot;artistId&quot;:80027768,&quot;albumArtist&quot;:&quot;브로콜리 너마저&quot;,&quot;albumTitle&quot;:&quot;잔인한 사월&quot;,&quot;albumId&quot;:331785,&quot;title&quot;:&quot;잔인한 사월&quot;,&quot;genre&quot;:&quot;락 &gt; 인디 락 (Indie Rock)&quot;,&quot;len&quot;:&quot;05:40&quot;,&quot;releaseDate&quot;:&quot;20120608&quot;}" data-music-count="9" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2678203', 'Bugs Player', 'width=384,height=667,resizable=0'))">잔인한 사월</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80027768">브로콜리너마저</a></td><td class="album"><a href="http://music.bugs.co.kr/album/331785">잔인한 사월</a></td><td class="count">9</td>
+      </tr>
+      
+      <tr id="bugs-68265" data-music="{&quot;artist&quot;:&quot;서태지와 아이들&quot;,&quot;artistId&quot;:1458,&quot;albumArtist&quot;:&quot;서태지와 아이들&quot;,&quot;albumTitle&quot;:&quot;시대유감(時代遺憾)&quot;,&quot;albumId&quot;:4070,&quot;title&quot;:&quot;태지 보이스&quot;,&quot;genre&quot;:&quot;팝 &gt; 팝, 팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;01:28&quot;,&quot;releaseDate&quot;:&quot;19960607&quot;}" data-music-count="42" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=68265', 'Bugs Player', 'width=384,height=667,resizable=0'))">태지 보이스</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/1458">서태지와 아이들</a></td><td class="album"><a href="http://music.bugs.co.kr/album/4070">시대유감(時代遺憾)</a></td><td class="count">42</td>
+      </tr>
+      
+      <tr id="bugs-2960147" data-music="{&quot;artist&quot;:&quot;JUNIEL(주니엘)&quot;,&quot;artistId&quot;:80127694,&quot;albumArtist&quot;:&quot;JUNIEL(주니엘)&quot;,&quot;albumTitle&quot;:&quot;Fall in L&quot;,&quot;albumId&quot;:366854,&quot;title&quot;:&quot;귀여운 남자&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:47&quot;,&quot;releaseDate&quot;:&quot;20130425&quot;}" data-music-count="73" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2960147', 'Bugs Player', 'width=384,height=667,resizable=0'))">귀여운 남자</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80127694">JUNIEL(주니엘)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/366854">Fall in L</a></td><td class="count">73</td>
+      </tr>
+      
+      <tr id="bugs-2787924" data-music="{&quot;artist&quot;:&quot;에픽 하이(Epik High)&quot;,&quot;artistId&quot;:65269,&quot;albumArtist&quot;:&quot;에픽 하이(Epik High)&quot;,&quot;albumTitle&quot;:&quot;Epik High 7집 '99'&quot;,&quot;albumId&quot;:345211,&quot;title&quot;:&quot;Don't Hate Me&quot;,&quot;genre&quot;:&quot;랩/힙합 &gt; 힙합 (Hip-Hop), 랩/힙합 &gt; 팝-랩 (Pop-Rap)&quot;,&quot;len&quot;:&quot;03:43&quot;,&quot;releaseDate&quot;:&quot;20121019&quot;}" data-music-count="49" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2787924', 'Bugs Player', 'width=384,height=667,resizable=0'))">Don't Hate Me</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/65269">에픽 하이(Epik High)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/345211">Epik High 7집 '99'</a></td><td class="count">49</td>
+      </tr>
+      
+      <tr id="bugs-2675052" data-music="{&quot;artist&quot;:&quot;원더걸스(Wonder Girls)&quot;,&quot;artistId&quot;:80022182,&quot;albumArtist&quot;:&quot;원더걸스(Wonder Girls)&quot;,&quot;albumTitle&quot;:&quot;Wonder Party&quot;,&quot;albumId&quot;:331415,&quot;title&quot;:&quot;Like this&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop), 랩/힙합 &gt; 팝-랩 (Pop-Rap)&quot;,&quot;len&quot;:&quot;03:12&quot;,&quot;releaseDate&quot;:&quot;20120603&quot;}" data-music-count="2" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2675052', 'Bugs Player', 'width=384,height=667,resizable=0'))">Like this</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80022182">원더걸스(Wonder Girls)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/331415">Wonder Party</a></td><td class="count">2</td>
+      </tr>
+      
+      <tr id="bugs-2703003" data-music="{&quot;artist&quot;:&quot;Lady GaGa(레이디 가가)&quot;,&quot;artistId&quot;:80046429,&quot;albumArtist&quot;:&quot;Various Artists&quot;,&quot;albumTitle&quot;:&quot;Superstar Audition&quot;,&quot;albumId&quot;:334635,&quot;title&quot;:&quot;Poker Face&quot;,&quot;genre&quot;:&quot;팝 &gt; 팝&quot;,&quot;len&quot;:&quot;03:58&quot;,&quot;releaseDate&quot;:&quot;20120710&quot;}" data-music-count="2" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2703003', 'Bugs Player', 'width=384,height=667,resizable=0'))">Poker Face</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80046429">Lady GaGa(레이디 가가)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/334635">Superstar Audition</a></td><td class="count">2</td>
+      </tr>
+      
+      <tr id="bugs-80099631" data-music="{&quot;artist&quot;:&quot;클래지콰이(Clazziquai)&quot;,&quot;artistId&quot;:80000379,&quot;albumArtist&quot;:&quot;Various Artists&quot;,&quot;albumTitle&quot;:&quot;내 이름은 김삼순 (MBC 수목드라마)&quot;,&quot;albumId&quot;:8009042,&quot;title&quot;:&quot;She Is&quot;,&quot;genre&quot;:&quot;OST  &gt; OST , OST  &gt; 로맨스&quot;,&quot;len&quot;:&quot;03:47&quot;,&quot;releaseDate&quot;:&quot;20050616&quot;}" data-music-count="21" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=80099631', 'Bugs Player', 'width=384,height=667,resizable=0'))">She Is</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80000379">클래지콰이(Clazziquai)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/8009042">내 이름은 김삼순 (MBC 수목드라마)</a></td><td class="count">21</td>
+      </tr>
+      
+      <tr id="bugs-9504876" data-music="{&quot;artist&quot;:&quot;MC 몽&quot;,&quot;artistId&quot;:60904,&quot;albumArtist&quot;:&quot;MC 몽&quot;,&quot;albumTitle&quot;:&quot;The Way I Am&quot;,&quot;albumId&quot;:9500422,&quot;title&quot;:&quot;아이스크림&quot;,&quot;genre&quot;:&quot;랩/힙합 &gt; 팝-랩 (Pop-Rap)&quot;,&quot;len&quot;:&quot;03:36&quot;,&quot;releaseDate&quot;:&quot;20060925&quot;}" data-music-count="50" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=9504876', 'Bugs Player', 'width=384,height=667,resizable=0'))">아이스크림</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/60904">MC 몽</a></td><td class="album"><a href="http://music.bugs.co.kr/album/9500422">The Way I Am</a></td><td class="count">50</td>
+      </tr>
+      
+      <tr id="bugs-80043647" data-music="{&quot;artist&quot;:&quot;노브레인(No Brain)&quot;,&quot;artistId&quot;:4419,&quot;albumArtist&quot;:&quot;노브레인(No Brain)&quot;,&quot;albumTitle&quot;:&quot;Stand Up Again!&quot;,&quot;albumId&quot;:8003377,&quot;title&quot;:&quot;넌 내게 반했어&quot;,&quot;genre&quot;:&quot;락 &gt; 펑크 (Punk), 락 &gt; 인디 락 (Indie Rock), 락 &gt; 락앤롤 (Rock And Roll)&quot;,&quot;len&quot;:&quot;03:43&quot;,&quot;releaseDate&quot;:&quot;20041202&quot;}" data-music-count="5" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=80043647', 'Bugs Player', 'width=384,height=667,resizable=0'))">넌 내게 반했어</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/4419">노브레인(No Brain)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/8003377">Stand Up Again!</a></td><td class="count">5</td>
+      </tr>
+      
+      <tr id="bugs-1943382" data-music="{&quot;artist&quot;:&quot;에픽 하이(Epik High)&quot;,&quot;artistId&quot;:65269,&quot;albumArtist&quot;:&quot;에픽 하이(Epik High)&quot;,&quot;albumTitle&quot;:&quot;Epilogue&quot;,&quot;albumId&quot;:218305,&quot;title&quot;:&quot;Coffee (feat. 성아)&quot;,&quot;genre&quot;:&quot;랩/힙합 &gt; 힙합 (Hip-Hop), 랩/힙합 &gt; 팝-랩 (Pop-Rap)&quot;,&quot;len&quot;:&quot;04:09&quot;,&quot;releaseDate&quot;:&quot;20100309&quot;}" data-music-count="5" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1943382', 'Bugs Player', 'width=384,height=667,resizable=0'))">Coffee (feat. 성아)</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/65269">에픽 하이(Epik High)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/218305">Epilogue</a></td><td class="count">5</td>
+      </tr>
+      
+      <tr id="bugs-1765702" data-music="{&quot;artist&quot;:&quot;서태지&quot;,&quot;artistId&quot;:5923,&quot;albumArtist&quot;:&quot;서태지&quot;,&quot;albumTitle&quot;:&quot;8th Atomos&quot;,&quot;albumId&quot;:190081,&quot;title&quot;:&quot;Human Dream&quot;,&quot;genre&quot;:&quot;락 &gt; 락&quot;,&quot;len&quot;:&quot;04:27&quot;,&quot;releaseDate&quot;:&quot;20090701&quot;}" data-music-count="4" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1765702', 'Bugs Player', 'width=384,height=667,resizable=0'))">Human Dream</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/5923">서태지</a></td><td class="album"><a href="http://music.bugs.co.kr/album/190081">8th Atomos</a></td><td class="count">4</td>
+      </tr>
+      
+      <tr id="bugs-1794761" data-music="{&quot;artist&quot;:&quot;에프엑스(f(x))&quot;,&quot;artistId&quot;:80059218,&quot;albumArtist&quot;:&quot;에프엑스(f(x))&quot;,&quot;albumTitle&quot;:&quot;라차타 (LA chA TA) &quot;,&quot;albumId&quot;:197081,&quot;title&quot;:&quot;라차타 (LA chA TA) &quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:12&quot;,&quot;releaseDate&quot;:&quot;20090901&quot;}" data-music-count="4" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1794761', 'Bugs Player', 'width=384,height=667,resizable=0'))">라차타 (LA chA TA) </a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80059218">에프엑스(f(x))</a></td><td class="album"><a href="http://music.bugs.co.kr/album/197081">라차타 (LA chA TA) </a></td><td class="count">4</td>
+      </tr>
+      
+      <tr id="bugs-2960150" data-music="{&quot;artist&quot;:&quot;JUNIEL(주니엘)&quot;,&quot;artistId&quot;:80127694,&quot;albumArtist&quot;:&quot;JUNIEL(주니엘)&quot;,&quot;albumTitle&quot;:&quot;Fall in L&quot;,&quot;albumId&quot;:366854,&quot;title&quot;:&quot;My Lips&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:04&quot;,&quot;releaseDate&quot;:&quot;20130425&quot;}" data-music-count="8" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2960150', 'Bugs Player', 'width=384,height=667,resizable=0'))">My Lips</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80127694">JUNIEL(주니엘)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/366854">Fall in L</a></td><td class="count">8</td>
+      </tr>
+      
+      <tr id="bugs-2719386" data-music="{&quot;artist&quot;:&quot;아이유 &amp; 피에스타&quot;,&quot;artistId&quot;:80132547,&quot;albumArtist&quot;:&quot;로엔트리(Loen Tree)&quot;,&quot;albumTitle&quot;:&quot;LOEN TREE Summer Story&quot;,&quot;albumId&quot;:336446,&quot;title&quot;:&quot;달빛바다&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop), 팝 &gt; 신스 팝 (Synth Pop)&quot;,&quot;len&quot;:&quot;03:27&quot;,&quot;releaseDate&quot;:&quot;20120802&quot;}" data-music-count="5" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2719386', 'Bugs Player', 'width=384,height=667,resizable=0'))">달빛바다</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80132547">아이유 &amp; 피에스타</a></td><td class="album"><a href="http://music.bugs.co.kr/album/336446">LOEN TREE Summer Story</a></td><td class="count">5</td>
+      </tr>
+      
+      <tr id="bugs-80296704" data-music="{&quot;artist&quot;:&quot;에픽 하이(Epik High)&quot;,&quot;artistId&quot;:65269,&quot;albumArtist&quot;:&quot;에픽 하이(Epik High)&quot;,&quot;albumTitle&quot;:&quot;Remapping The Human Soul&quot;,&quot;albumId&quot;:8024317,&quot;title&quot;:&quot;피해망상 Pt.1&quot;,&quot;genre&quot;:&quot;랩/힙합 &gt; 힙합 (Hip-Hop)&quot;,&quot;len&quot;:&quot;04:34&quot;,&quot;releaseDate&quot;:&quot;20070123&quot;}" data-music-count="10" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=80296704', 'Bugs Player', 'width=384,height=667,resizable=0'))">피해망상 Pt.1</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/65269">에픽 하이(Epik High)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/8024317">Remapping The Human Soul</a></td><td class="count">10</td>
+      </tr>
+      
+      <tr id="bugs-340311" data-music="{&quot;artist&quot;:&quot;LMNT(엘리먼트)&quot;,&quot;artistId&quot;:60049,&quot;albumArtist&quot;:&quot;LMNT(엘리먼트)&quot;,&quot;albumTitle&quot;:&quot;All Sides&quot;,&quot;albumId&quot;:24549,&quot;title&quot;:&quot;Juliet&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop), 락 &gt; 모던 락 (Modern Rock), 락 &gt; 네오 펑크 (Neo-Punk), 락 &gt; 소프트 락 (Soft Rock)&quot;,&quot;len&quot;:&quot;03:39&quot;,&quot;releaseDate&quot;:&quot;20020715&quot;}" data-music-count="18" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=340311', 'Bugs Player', 'width=384,height=667,resizable=0'))">Juliet</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/60049">LMNT(엘리먼트)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/24549">All Sides</a></td><td class="count">18</td>
+      </tr>
+      
+      <tr id="bugs-2386862" data-music="{&quot;artist&quot;:&quot;현아 [포미닛]&quot;,&quot;artistId&quot;:80057265,&quot;albumArtist&quot;:&quot;현아 [포미닛]&quot;,&quot;albumTitle&quot;:&quot;Bubble Pop! &quot;,&quot;albumId&quot;:292253,&quot;title&quot;:&quot;Bubble Pop!&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:32&quot;,&quot;releaseDate&quot;:&quot;20110705&quot;}" data-music-count="13" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2386862', 'Bugs Player', 'width=384,height=667,resizable=0'))">Bubble Pop!</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80057265">현아 [포미닛]</a></td><td class="album"><a href="http://music.bugs.co.kr/album/292253">Bubble Pop! </a></td><td class="count">13</td>
+      </tr>
+      
+      <tr id="bugs-88794" data-music="{&quot;artist&quot;:&quot;서태지&quot;,&quot;artistId&quot;:5923,&quot;albumArtist&quot;:&quot;서태지&quot;,&quot;albumTitle&quot;:&quot;울트라맨이야&quot;,&quot;albumId&quot;:4049,&quot;title&quot;:&quot;울트라맨이야&quot;,&quot;genre&quot;:&quot;락 &gt; 락, 락 &gt; 얼터너티브 메탈 (Alternative Metal)&quot;,&quot;len&quot;:&quot;03:23&quot;,&quot;releaseDate&quot;:&quot;200009&quot;}" data-music-count="3" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=88794', 'Bugs Player', 'width=384,height=667,resizable=0'))">울트라맨이야</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/5923">서태지</a></td><td class="album"><a href="http://music.bugs.co.kr/album/4049">울트라맨이야</a></td><td class="count">3</td>
+      </tr>
+      
+      <tr id="bugs-2922925" data-music="{&quot;artist&quot;:&quot;Students&quot;,&quot;artistId&quot;:80150106,&quot;albumArtist&quot;:&quot;Various Artists&quot;,&quot;albumTitle&quot;:&quot;레미제라블 (Les Miserables) OST [Deluxe]&quot;,&quot;albumId&quot;:361773,&quot;title&quot;:&quot;Do You Hear The People Sing?&quot;,&quot;genre&quot;:&quot;OST  &gt; &gt; 뮤지컬 영화, OST  &gt; &gt; 영화&quot;,&quot;len&quot;:&quot;02:03&quot;,&quot;releaseDate&quot;:&quot;20130318&quot;}" data-music-count="34" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2922925', 'Bugs Player', 'width=384,height=667,resizable=0'))">Do You Hear The People Sing?</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80150106">Students</a></td><td class="album"><a href="http://music.bugs.co.kr/album/361773">레미제라블 (Les Miserables) OST [Deluxe]</a></td><td class="count">34</td>
+      </tr>
+      
+      <tr id="bugs-2947765" data-music="{&quot;artist&quot;:&quot;싸이(Psy)&quot;,&quot;artistId&quot;:3572,&quot;albumArtist&quot;:&quot;싸이(Psy)&quot;,&quot;albumTitle&quot;:&quot;Gentleman&quot;,&quot;albumId&quot;:365106,&quot;title&quot;:&quot;Gentleman&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:14&quot;,&quot;releaseDate&quot;:&quot;20130412&quot;}" data-music-count="55" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2947765', 'Bugs Player', 'width=384,height=667,resizable=0'))">Gentleman</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/3572">싸이(Psy)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/365106">Gentleman</a></td><td class="count">55</td>
+      </tr>
+      
+      <tr id="bugs-64316" data-music="{&quot;artist&quot;:&quot;서태지와 아이들&quot;,&quot;artistId&quot;:1458,&quot;albumArtist&quot;:&quot;서태지와 아이들&quot;,&quot;albumTitle&quot;:&quot;컴백홈&quot;,&quot;albumId&quot;:4065,&quot;title&quot;:&quot;Taiji Boys&quot;,&quot;genre&quot;:&quot;팝 &gt; 팝, 팝 &gt; 댄스 팝 (Dance Pop), 락 &gt; 얼터너티브 메탈 (Alternative Metal)&quot;,&quot;len&quot;:&quot;01:27&quot;,&quot;releaseDate&quot;:&quot;19951005&quot;}" data-music-count="10" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=64316', 'Bugs Player', 'width=384,height=667,resizable=0'))">Taiji Boys</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/1458">서태지와 아이들</a></td><td class="album"><a href="http://music.bugs.co.kr/album/4065">컴백홈</a></td><td class="count">10</td>
+      </tr>
+      
+      <tr id="bugs-1831092" data-music="{&quot;artist&quot;:&quot;이지아&quot;,&quot;artistId&quot;:80051807,&quot;albumArtist&quot;:&quot;Various Artists&quot;,&quot;albumTitle&quot;:&quot;내눈에 콩깍지 &quot;,&quot;albumId&quot;:205361,&quot;title&quot;:&quot;컵케익과 외계인 (With 성진환 By Sweet Sorrow)&quot;,&quot;genre&quot;:&quot;OST  &gt; &gt; 영화&quot;,&quot;len&quot;:&quot;03:57&quot;,&quot;releaseDate&quot;:&quot;20091109&quot;}" data-music-count="8" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1831092', 'Bugs Player', 'width=384,height=667,resizable=0'))">컵케익과 외계인 (With 성진환 By Sweet Sorrow)</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80051807">이지아</a></td><td class="album"><a href="http://music.bugs.co.kr/album/205361">내눈에 콩깍지 </a></td><td class="count">8</td>
+      </tr>
+      
+      <tr id="bugs-2074302" data-music="{&quot;artist&quot;:&quot;투애니원(2NE1)&quot;,&quot;artistId&quot;:80054982,&quot;albumArtist&quot;:&quot;투애니원(2NE1)&quot;,&quot;albumTitle&quot;:&quot;To Anyone&quot;,&quot;albumId&quot;:237329,&quot;title&quot;:&quot;Can't Nobody&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop), 랩/힙합 &gt; 팝-랩 (Pop-Rap)&quot;,&quot;len&quot;:&quot;03:28&quot;,&quot;releaseDate&quot;:&quot;20100909&quot;}" data-music-count="3" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2074302', 'Bugs Player', 'width=384,height=667,resizable=0'))">Can't Nobody</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80054982">투애니원(2NE1)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/237329">To Anyone</a></td><td class="count">3</td>
+      </tr>
+      
+      <tr id="bugs-2559106" data-music="{&quot;artist&quot;:&quot;제시카 &amp; 김진표&quot;,&quot;artistId&quot;:80119707,&quot;albumArtist&quot;:&quot;제시카 &amp; 김진표&quot;,&quot;albumTitle&quot;:&quot;난폭한 로맨스 OST Part.2&quot;,&quot;albumId&quot;:318868,&quot;title&quot;:&quot;어쩜&quot;,&quot;genre&quot;:&quot;OST  &gt; &gt; TV 드라마&quot;,&quot;len&quot;:&quot;03:53&quot;,&quot;releaseDate&quot;:&quot;20120119&quot;}" data-music-count="13" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2559106', 'Bugs Player', 'width=384,height=667,resizable=0'))">어쩜</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80119707">제시카 &amp; 김진표</a></td><td class="album"><a href="http://music.bugs.co.kr/album/318868">난폭한 로맨스 OST Part.2</a></td><td class="count">13</td>
+      </tr>
+      
+      <tr id="bugs-46370" data-music="{&quot;artist&quot;:&quot;자우림&quot;,&quot;artistId&quot;:1443,&quot;albumArtist&quot;:&quot;자우림&quot;,&quot;albumTitle&quot;:&quot;Purple Heart&quot;,&quot;albumId&quot;:4667,&quot;title&quot;:&quot;일탈&quot;,&quot;genre&quot;:&quot;락 &gt; 얼터너티브 (Alternative)&quot;,&quot;len&quot;:&quot;03:59&quot;,&quot;releaseDate&quot;:&quot;199711&quot;}" data-music-count="7" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=46370', 'Bugs Player', 'width=384,height=667,resizable=0'))">일탈</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/1443">자우림</a></td><td class="album"><a href="http://music.bugs.co.kr/album/4667">Purple Heart</a></td><td class="count">7</td>
+      </tr>
+      
+      <tr id="bugs-493142" data-music="{&quot;artist&quot;:&quot;어쿠스틱카페(Acoustic Cafe)&quot;,&quot;artistId&quot;:36129,&quot;albumArtist&quot;:&quot;어쿠스틱카페(Acoustic Cafe)&quot;,&quot;albumTitle&quot;:&quot;For Your Memories&quot;,&quot;albumId&quot;:33074,&quot;title&quot;:&quot;The Girl From Ipanema&quot;,&quot;genre&quot;:&quot;뉴에이지 &gt; 컨템포러리 연주 (Contemporary Instrumental), 뉴에이지 &gt; 네오 클래시컬 (Neo-Classical)&quot;,&quot;len&quot;:&quot;03:19&quot;,&quot;releaseDate&quot;:&quot;20031103&quot;}" data-music-count="6" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=493142', 'Bugs Player', 'width=384,height=667,resizable=0'))">The Girl From Ipanema</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/36129">어쿠스틱카페(Acoustic Cafe)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/33074">For Your Memories</a></td><td class="count">6</td>
+      </tr>
+      
+      <tr id="bugs-1825141" data-music="{&quot;artist&quot;:&quot;Lady GaGa(레이디 가가)&quot;,&quot;artistId&quot;:80046429,&quot;albumArtist&quot;:&quot;Lady GaGa(레이디 가가)&quot;,&quot;albumTitle&quot;:&quot;Bad Romance&quot;,&quot;albumId&quot;:203901,&quot;title&quot;:&quot;Bad Romance&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;04:56&quot;,&quot;releaseDate&quot;:&quot;20091027&quot;}" data-music-count="10" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1825141', 'Bugs Player', 'width=384,height=667,resizable=0'))">Bad Romance</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80046429">Lady GaGa(레이디 가가)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/203901">Bad Romance</a></td><td class="count">10</td>
+      </tr>
+      
+      <tr id="bugs-1657702" data-music="{&quot;artist&quot;:&quot;더블에스501(SS501)&quot;,&quot;artistId&quot;:80010114,&quot;albumArtist&quot;:&quot;더블에스501(SS501)&quot;,&quot;albumTitle&quot;:&quot;SS501 Special Album - U R Man&quot;,&quot;albumId&quot;:171081,&quot;title&quot;:&quot;U R Man&quot;,&quot;genre&quot;:&quot;팝 &gt; 발라드 (Ballad), 팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:20&quot;,&quot;releaseDate&quot;:&quot;20081121&quot;}" data-music-count="9" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1657702', 'Bugs Player', 'width=384,height=667,resizable=0'))">U R Man</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80010114">더블에스501(SS501)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/171081">SS501 Special Album - U R Man</a></td><td class="count">9</td>
+      </tr>
+      
+      <tr id="bugs-2789708" data-music="{&quot;artist&quot;:&quot;현아 [포미닛]&quot;,&quot;artistId&quot;:80057265,&quot;albumArtist&quot;:&quot;현아 [포미닛]&quot;,&quot;albumTitle&quot;:&quot;MELTING&quot;,&quot;albumId&quot;:345326,&quot;title&quot;:&quot;Ice Cream (feat. Maboos)&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop)&quot;,&quot;len&quot;:&quot;03:15&quot;,&quot;releaseDate&quot;:&quot;20121021&quot;}" data-music-count="62" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=2789708', 'Bugs Player', 'width=384,height=667,resizable=0'))">Ice Cream (feat. Maboos)</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80057265">현아 [포미닛]</a></td><td class="album"><a href="http://music.bugs.co.kr/album/345326">MELTING</a></td><td class="count">62</td>
+      </tr>
+      
+      <tr id="bugs-1815692" data-music="{&quot;artist&quot;:&quot;다이나믹 듀오(Dynamic Duo)&quot;,&quot;artistId&quot;:65291,&quot;albumArtist&quot;:&quot;다이나믹 듀오(Dynamic Duo)&quot;,&quot;albumTitle&quot;:&quot;Band Of Dynamic Brothers&quot;,&quot;albumId&quot;:201402,&quot;title&quot;:&quot;불꽃놀이 (Fireworks)&quot;,&quot;genre&quot;:&quot;랩/힙합 &gt; 힙합 (Hip-Hop)&quot;,&quot;len&quot;:&quot;03:52&quot;,&quot;releaseDate&quot;:&quot;20091007&quot;}" data-music-count="21" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1815692', 'Bugs Player', 'width=384,height=667,resizable=0'))">불꽃놀이 (Fireworks)</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/65291">다이나믹 듀오(Dynamic Duo)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/201402">Band Of Dynamic Brothers</a></td><td class="count">21</td>
+      </tr>
+      
+      <tr id="bugs-1767441" data-music="{&quot;artist&quot;:&quot;Daft Punk(다프트 펑크)&quot;,&quot;artistId&quot;:35606,&quot;albumArtist&quot;:&quot;Various Artists&quot;,&quot;albumTitle&quot;:&quot;2009 Best Of Electronica&quot;,&quot;albumId&quot;:190452,&quot;title&quot;:&quot;Technologic (애플 아이팟 해외CF 삽입곡)&quot;,&quot;genre&quot;:&quot;일렉트로니카 &gt; 일렉트로니카&quot;,&quot;len&quot;:&quot;02:46&quot;,&quot;releaseDate&quot;:&quot;20090702&quot;}" data-music-count="42" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=1767441', 'Bugs Player', 'width=384,height=667,resizable=0'))">Technologic (애플 아이팟 해외CF 삽입곡)</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/35606">Daft Punk(다프트 펑크)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/190452">2009 Best Of Electronica</a></td><td class="count">42</td>
+      </tr>
+      
+      <tr id="bugs-80280675" data-music="{&quot;artist&quot;:&quot;타카피(Tacopy)&quot;,&quot;artistId&quot;:18981,&quot;albumArtist&quot;:&quot;Various Artists&quot;,&quot;albumTitle&quot;:&quot;반올림# 3 (KBS 성장드라마)&quot;,&quot;albumId&quot;:8022908,&quot;title&quot;:&quot;달려 달려 달려&quot;,&quot;genre&quot;:&quot;OST  &gt; 청소년, OST  &gt; &gt; TV 드라마&quot;,&quot;len&quot;:&quot;02:53&quot;,&quot;releaseDate&quot;:&quot;20061114&quot;}" data-music-count="7" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=80280675', 'Bugs Player', 'width=384,height=667,resizable=0'))">달려 달려 달려</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/18981">타카피(Tacopy)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/8022908">반올림# 3 (KBS 성장드라마)</a></td><td class="count">7</td>
+      </tr>
+      
+      <tr id="bugs-61532" data-music="{&quot;artist&quot;:&quot;시나위&quot;,&quot;artistId&quot;:29036,&quot;albumArtist&quot;:&quot;시나위&quot;,&quot;albumTitle&quot;:&quot;Sinawe 4&quot;,&quot;albumId&quot;:4159,&quot;title&quot;:&quot;Farewell To Love&quot;,&quot;genre&quot;:&quot;락 &gt; 락, 락 &gt; 헤비 메탈 (Heavy Metal)&quot;,&quot;len&quot;:&quot;04:18&quot;,&quot;releaseDate&quot;:&quot;1990&quot;}" data-music-count="3" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=61532', 'Bugs Player', 'width=384,height=667,resizable=0'))">Farewell To Love</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/29036">시나위</a></td><td class="album"><a href="http://music.bugs.co.kr/album/4159">Sinawe 4</a></td><td class="count">3</td>
+      </tr>
+      
+      <tr id="bugs-80085772" data-music="{&quot;artist&quot;:&quot;Jim Jacobs(짐 제이콥스)&quot;,&quot;artistId&quot;:80008459,&quot;albumArtist&quot;:&quot;Various Artists&quot;,&quot;albumTitle&quot;:&quot;뮤지컬의 향기&quot;,&quot;albumId&quot;:8007695,&quot;title&quot;:&quot;그리스 (Grease) - Summer Night&quot;,&quot;genre&quot;:&quot;OST  &gt; &gt; 뮤지컬&quot;,&quot;len&quot;:&quot;03:42&quot;,&quot;releaseDate&quot;:&quot;20050408&quot;}" data-music-count="12" class="palette palette-clouds"><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=80085772', 'Bugs Player', 'width=384,height=667,resizable=0'))">그리스 (Grease) - Summer Night</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/80008459">Jim Jacobs(짐 제이콥스)</a></td><td class="album"><a href="http://music.bugs.co.kr/album/8007695">뮤지컬의 향기</a></td><td class="count">12</td>
+      </tr>
+      
+      <tr id="bugs-9389" data-music="{&quot;artist&quot;:&quot;DJ DOC&quot;,&quot;artistId&quot;:1390,&quot;albumArtist&quot;:&quot;DJ DOC&quot;,&quot;albumTitle&quot;:&quot;Season's Greeting&quot;,&quot;albumId&quot;:927,&quot;title&quot;:&quot;여름 이야기&quot;,&quot;genre&quot;:&quot;팝 &gt; 댄스 팝 (Dance Pop), 기능성음악 &gt; 캐롤&quot;,&quot;len&quot;:&quot;04:06&quot;,&quot;releaseDate&quot;:&quot;20001221&quot;}" data-music-count="21" class=""><td class="title"><a href="javascript:void(window.open('http://music.bugs.co.kr/newPlayer?trackId=9389', 'Bugs Player', 'width=384,height=667,resizable=0'))">여름 이야기</a></td><td class="artist"><a href="http://music.bugs.co.kr/artist/1390">DJ DOC</a></td><td class="album"><a href="http://music.bugs.co.kr/album/927">Season's Greeting</a></td><td class="count">21</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div> <!-- /container -->
+}
