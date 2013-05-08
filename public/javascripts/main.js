@@ -8,22 +8,12 @@
 (function() {
 
   jQuery(function() {
-    var c, searchBox, searchHistory, welcomeTitle;
-    welcomeTitle = $('#welcomeTitle');
-    if (welcomeTitle.length > 0) {
-      welcomeTitle.addClass('animated');
-    }
-    searchBox = $('#searchBox');
-    if (searchBox.length > 0) {
-      c = searchBox.children('.container');
-      c.addClass('animated');
-      searchHistory = $('div.search-history');
-      if (searchHistory.length > 0) {
-        searchHistory.find('span').click(function(e) {
-          $(searchBox.find('input[name=q]')).val($(this).html());
-          return $(searchBox.find('button[type=submit]')).trigger('click');
-        });
-      }
+    var newsfeed;
+    newsfeed = $('button#newsfeedButton');
+    if (newsfeed.length > 0) {
+      newsfeed.click(function(e) {
+        return $('#newsfeed').slideToggle();
+      });
     }
     $('[data-toggle=tooltip]').tooltip();
     return true;
