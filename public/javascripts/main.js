@@ -8,11 +8,17 @@
 (function() {
 
   jQuery(function() {
-    var newsfeed;
+    var listen, newsfeed;
     newsfeed = $('button#newsfeedButton');
     if (newsfeed.length > 0) {
       newsfeed.click(function(e) {
         return $('#newsfeed').slideToggle();
+      });
+    }
+    listen = $('table#listen');
+    if (listen.length > 0) {
+      listen.find('tbody tr').click(function(e) {
+        return $(this).toggleClass('checked');
       });
     }
     $('[data-toggle=tooltip]').tooltip();

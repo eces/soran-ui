@@ -42,6 +42,7 @@
   <h1 class="typo-capital">지금까지 175,300곡 추천함</h1>
   <h1 class="typo-capital">175,300 SONGS ARE RECOMMENDED.</h1>
 
+  <h1>Basic elements</h1>
   <h3 class="demo-panel-title">Buttons</h3>
 
   <div class="row demo-row">
@@ -59,18 +60,34 @@
     </div>
   </div> <!-- /row -->
 
+
   <div class="row demo-row">
     <div class="span3">
-      <a href="#" class="btn btn-large btn-block btn-success">Success Button</a>
+      <a href="#fakelink" class="btn btn-large btn-block btn-primary">Primary Button</a>
     </div>
     <div class="span3">
-      <a href="#" class="btn btn-large btn-block btn-warning">Warning Button</a>
+      <a href="#fakelink" class="btn btn-large btn-block btn-warning">Warning Button</a>
     </div>
     <div class="span3">
-      <a href="#" class="btn btn-large btn-block btn-inverse">Inverse Button</a>
+      <a href="#fakelink" class="btn btn-block btn-large">Default Button</a>
     </div>
     <div class="span3">
-      <a href="#" class="btn btn-large btn-block disabled">Disabled Button</a>
+      <a href="#fakelink" class="btn btn-large btn-block btn-danger">Danger Button</a>
+    </div>
+  </div> <!-- /row -->
+
+  <div class="row demo-row">
+    <div class="span3">
+      <a href="#fakelink" class="btn btn-large btn-block btn-success">Success Button</a>
+    </div>
+    <div class="span3">
+      <a href="#fakelink" class="btn btn-large btn-block btn-inverse">Inverse Button</a>
+    </div>
+    <div class="span3">
+      <a href="#fakelink" class="btn btn-large btn-block btn-info">Info Button</a>
+    </div>
+    <div class="span3">
+      <a href="#fakelink" class="btn btn-large btn-block disabled">Disabled Button</a>
     </div>
   </div> <!-- /row -->
 
@@ -80,51 +97,46 @@
       <div class="navbar navbar-inverse">
         <div class="navbar-inner">
           <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="nav-collapse collapse">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse-01"></button>
+            <div class="nav-collapse collapse" id="nav-collapse-01">
               <ul class="nav">
                 <li>
-                  <a href="#">
+                  <a href="#fakelink">
                     Menu Item
                     <span class="navbar-unread">1</span>
                   </a>
                 </li>
                 <li class="active">
-                  <a href="#">
+                  <a href="#fakelink">
                     Messages
                     <span class="navbar-unread">1</span>
                   </a>
                   <ul>
-                    <li><a href="#">Element One</a></li>
+                    <li><a href="#fakelink">Element One</a></li>
                     <li>
-                      <a href="#">Sub menu</a>
+                      <a href="#fakelink">Sub menu</a>
                       <ul>
-                        <li><a href="#">Element One</a></li>
-                        <li><a href="#">Element Two</a></li>
-                        <li><a href="#">Element Three</a></li>
+                        <li><a href="#fakelink">Element One</a></li>
+                        <li><a href="#fakelink">Element Two</a></li>
+                        <li><a href="#fakelink">Element Three</a></li>
                       </ul> <!-- /Sub menu -->
                     </li>
-                    <li><a href="#">Element Three</a></li>
+                    <li><a href="#fakelink">Element Three</a></li>
                   </ul> <!-- /Sub menu -->
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#fakelink">
                     About Us
-                    <span class="navbar-unread">1</span>
                   </a>
                 </li>
               </ul>
-            </div><!--/.nav-collapse -->
+            </div><!--/.nav -->
           </div>
         </div>
       </div>
     </div>
     <div class="span3">
-      <select value="X-Men" class="span3" tabindex="1" name="herolist">
+      <select name="herolist" value="X-Men" class="select-block span3">
         <option value="0">Choose hero</option>
         <option value="1">Spider Man</option>
         <option value="2">Wolverine</option>
@@ -148,6 +160,7 @@
     <div class="span3">
       <div class="control-group success">
         <input type="text" value="Success" class="span3" />
+        <i class="input-icon fui-check-inverted"></i>
       </div>
     </div>
     <div class="span3">
@@ -183,25 +196,24 @@
         <div class="span3">
           <div class="btn-toolbar">
             <div class="btn-group">
-              <a class="btn btn-primary" href="#"><i class="fui-time-16"></i></a>
-              <a class="btn btn-primary" href="#"><i class="fui-camera-16"></i></a>
-              <a class="btn btn-primary active" href="#"><i class="fui-heart-16"></i></a>
-              <a class="btn btn-primary" href="#"><i class="fui-eye-16"></i></a>
+              <a class="btn btn-primary" href="#fakelink"><i class="fui-time"></i></a>
+              <a class="btn btn-primary" href="#fakelink"><i class="fui-photo"></i></a>
+              <a class="btn btn-primary active" href="#fakelink"><i class="fui-heart"></i></a>
+              <a class="btn btn-primary" href="#fakelink"><i class="fui-eye"></i></a>
             </div>
           </div> <!-- /toolbar -->
         </div>
         <div class="span3 demo-pager">
           <ul class="pager">
             <li class="previous">
-              <a href="#">
-                <img src="assets/images/pager/previous.png" />
-                All messages
+              <a href="#fakelink">
+                <i class="fui-arrow-left"></i>
+                <span>All messages</span>
               </a>
             </li>
-            <!-- <li class="pager-center">Center</li> -->
             <li class="next">
-              <a href="#">
-                <img src="assets/images/pager/next.png" />
+              <a href="#fakelink">
+                <i class="fui-arrow-right"></i>
               </a>
             </li>
           </ul> <!-- /pager -->
@@ -210,19 +222,18 @@
 
       <div class="pagination">
         <ul>
-          <li class="previous"><a href="#"><img src="assets/images/pager/previous.png" /></a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">6</a></li>
-          <li><a href="#">7</a></li>
-          <li><a href="#">8</a></li>
-          <li><a href="#">9</a></li>
-          <li class="next"><a href="#"><img src="assets/images/pager/next.png" /></a></li>
+          <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+          <li class="active"><a href="#fakelink">1</a></li>
+          <li><a href="#fakelink">2</a></li>
+          <li><a href="#fakelink">3</a></li>
+          <li><a href="#fakelink">4</a></li>
+          <li><a href="#fakelink">5</a></li>
+          <li><a href="#fakelink">6</a></li>
+          <li><a href="#fakelink">7</a></li>
+          <li><a href="#fakelink">8</a></li>
+          <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
         </ul>
-      </div>
+      </div> <!-- /pagination -->
     </div> <!-- /navigation -->
   </div> <!-- /row -->
 
@@ -230,20 +241,19 @@
     <div class="span3">
       <h3 class="demo-panel-title">Checkboxes</h3>
       <label class="checkbox" for="checkbox1">
-        <input type="checkbox" value="" id="checkbox1">
+        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
         Unchecked
       </label>
       <label class="checkbox" for="checkbox2">
-        <input type="checkbox" checked="checked" value="" id="checkbox2">
+        <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
         Checked
       </label>
-
       <label class="checkbox" for="checkbox3">
-        <input type="checkbox" value="" id="checkbox3" disabled="">
+        <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
         Disabled unchecked
       </label>
       <label class="checkbox" for="checkbox4">
-        <input type="checkbox" checked="checked" value="" id="checkbox4" disabled="">
+        <input type="checkbox" checked="checked" value="" id="checkbox4" data-toggle="checkbox" disabled="" checked="">
         Disabled checked
       </label>
     </div> <!-- /checkboxes span3 -->
@@ -251,64 +261,61 @@
     <div class="span3">
       <h3 class="demo-panel-title">Radio Buttons</h3>
       <label class="radio">
-        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
         Radio is off
       </label>
       <label class="radio">
-        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked="">
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
         Radio is on
       </label>
 
       <label class="radio">
-        <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" disabled="">
+        <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio" disabled="">
         Disabled radio is off
       </label>
       <label class="radio">
-        <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" checked="" disabled="">
+        <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio" checked="" disabled="">
         Disabled radio is on
       </label>
     </div> <!-- /radios span3 -->
 
     <div class="span3">
-      <h3 class="demo-panel-title">Toggles</h3>
+      <h3 class="demo-panel-title">Switches</h3>
 
       <table width="100%">
         <tr>
-          <td width="50%">
-            <div class="toggle">
-              <label class="toggle-radio" for="toggleOption2">ON</label>
-              <input type="radio" name="toggleOptions" id="toggleOption1" value="option1" checked="checked">
-              <label class="toggle-radio" for="toggleOption1">OFF</label>
-              <input type="radio" name="toggleOptions" id="toggleOption2" value="option2">
+          <td width="50%" class="pbm">
+            <input type="checkbox" checked="" data-toggle="switch" />
+          </td>
+
+          <td class="pbm">
+            <input type="checkbox" data-toggle="switch" />
+          </td>
+        </tr>
+        <tr>
+          <td class="pbm">
+            <div class="switch switch-square"
+              data-on-label="<i class='fui-check'></i>"
+              data-off-label="<i class='fui-cross'></i>">
+              <input type="checkbox" />
             </div>
           </td>
 
-          <td>
-            <div class="toggle">
-              <label class="toggle-radio" for="toggleOption4">ON</label>
-              <input type="radio" name="toggleOptions2" id="toggleOption3" value="option3">
-              <label class="toggle-radio" for="toggleOption3">OFF</label>
-              <input type="radio" name="toggleOptions2" id="toggleOption4" value="option4" checked="checked">
+          <td class="pbm">
+            <div class="switch switch-square"
+              data-on-label="<i class='fui-check'></i>"
+              data-off-label="<i class='fui-cross'></i>">
+              <input type="checkbox" checked="" />
             </div>
           </td>
         </tr>
         <tr>
           <td>
-            <div class="toggle toggle-icon">
-              <label class="toggle-radio fui-checkmark-16" for="toggleOption6"></label>
-              <input type="radio" name="toggleOptions3" id="toggleOption5" value="option5" checked="checked">
-              <label class="toggle-radio fui-cross-16" for="toggleOption5"></label>
-              <input type="radio" name="toggleOptions3" id="toggleOption6" value="option6">
-            </div>
+            <input type="checkbox" disabled data-toggle="switch" />
           </td>
 
           <td>
-            <div class="toggle toggle-icon">
-              <label class="toggle-radio fui-checkmark-16" for="toggleOption8"></label>
-              <input type="radio" name="toggleOptions4" id="toggleOption7" value="option7">
-              <label class="toggle-radio fui-cross-16" for="toggleOption7"></label>
-              <input type="radio" name="toggleOptions4" id="toggleOption8" value="option8" checked="checked">
-            </div>
+            <input type="checkbox" checked disabled data-toggle="switch" />
           </td>
         </tr>
       </table>
@@ -327,30 +334,15 @@
         <ul>
           <li>
             <label class="share-label" for="share-toggle2">Facebook</label>
-            <div class="toggle">
-              <label class="toggle-radio" for="share-toggle2">ON</label>
-              <input type="radio" name="share-toggles" id="share-toggle2" value="toggle1">
-              <label class="toggle-radio" for="share-toggle1">OFF</label>
-              <input type="radio" name="share-toggles" id="share-toggle1" value="toggle2" checked="checked">
-            </div>
+            <input type="checkbox" data-toggle="switch" />
           </li>
           <li>
             <label class="share-label" for="share-toggle4">Twitter</label>
-            <div class="toggle">
-              <label class="toggle-radio" for="share-toggle4">ON</label>
-              <input type="radio" name="share-toggles2" id="share-toggle4" value="toggle1" checked="checked">
-              <label class="toggle-radio" for="share-toggle3">OFF</label>
-              <input type="radio" name="share-toggles2" id="share-toggle3" value="toggle2">
-            </div>
+            <input type="checkbox" checked="" data-toggle="switch" />
           </li>
           <li>
             <label class="share-label" for="share-toggle6">Pinterest</label>
-            <div class="toggle">
-              <label class="toggle-radio" for="share-toggle6">ON</label>
-              <input type="radio" name="share-toggles3" id="share-toggle6" value="toggle1">
-              <label class="toggle-radio" for="share-toggle5">OFF</label>
-              <input type="radio" name="share-toggles3" id="share-toggle5" value="toggle2" checked="checked">
-            </div>
+            <input type="checkbox" data-toggle="switch" />
           </li>
         </ul>
         <a href="#" class="btn btn-primary btn-block btn-large">Share</a>
@@ -391,33 +383,33 @@
       <h3 class="demo-panel-title">Color Swatches</h3>
       <div class="row mbl">
         <div class="span2">
-          <dl class="palette palette-firm">
+          <dl class="palette palette-turquoise">
             <dt>#1abc9c</dt>
             <dd>Turquoise</dd>
           </dl>
-          <dl class="palette palette-firm-dark">
+          <dl class="palette palette-green-sea">
             <dt>#16a085</dt>
             <dd>Green sea</dd>
           </dl>
         </div>
 
         <div class="span2">
-          <dl class="palette palette-success">
+          <dl class="palette palette-emerland">
             <dt>#2ecc71</dt>
             <dd>Emerland</dd>
           </dl>
-          <dl class="palette palette-success-dark">
+          <dl class="palette palette-nephritis">
             <dt>#27ae60</dt>
             <dd>Nephritis</dd>
           </dl>
         </div>
 
         <div class="span2">
-          <dl class="palette palette-info">
+          <dl class="palette palette-peter-river">
             <dt>#3498db</dt>
             <dd>Peter river</dd>
           </dl>
-          <dl class="palette palette-info-dark">
+          <dl class="palette palette-belize-hole">
             <dt>#2980b9</dt>
             <dd>Belize hole</dd>
           </dl>
@@ -435,11 +427,11 @@
         </div>
 
         <div class="span2">
-          <dl class="palette palette-night">
+          <dl class="palette palette-wet-asphalt">
             <dt>#34495e</dt>
             <dd>Wet asphalt</dd>
           </dl>
-          <dl class="palette palette-night-dark">
+          <dl class="palette palette-midnight-blue">
             <dt>#2c3e50</dt>
             <dd>Midnight blue</dd>
           </dl>
@@ -448,11 +440,11 @@
 
       <div class="row mbl">
         <div class="span2">
-          <dl class="palette palette-bright">
+          <dl class="palette palette-sun-flower">
             <dt>#f1c40f</dt>
             <dd>Sun flower</dd>
           </dl>
-          <dl class="palette palette-bright-dark">
+          <dl class="palette palette-orange">
             <dt>#f39c12</dt>
             <dd>Orange</dd>
           </dl>
@@ -519,74 +511,59 @@
     </div> <!-- /swatches desc -->
   </div> <!-- /swatches row -->
 
-  <h3 class="demo-panel-title">Vector Icons <small>(14)</small></h3>
+  <h3 class="demo-panel-title">Icons <small>(14)</small></h3>
   <div class="demo-illustrations">
-    <img src="assets/images/illustrations/compass.png" class="big-illustration" src="" />
-    <img src="assets/images/illustrations/infinity.png" src="" />
-    <img src="assets/images/illustrations/map.png" src="" />
-    <img src="assets/images/illustrations/paper.png" src="" />
-    <img src="assets/images/illustrations/gift.png" src="" />
-    <img src="assets/images/illustrations/time.png" src="" />
-    <img src="assets/images/illustrations/calendar.png" src="" />
-  </div>
-  <div class="demo-illustrations">
-    <img src="assets/images/illustrations/clipboard.png" class="big-illustration-pusher" src="" />
-    <img src="assets/images/illustrations/bag.png" src="" />
-    <img src="assets/images/illustrations/share.png" src="" />
-    <img src="assets/images/illustrations/colors.png" src="" />
-    <img src="assets/images/illustrations/mail.png" src="" />
-    <img src="assets/images/illustrations/book.png" src="" />
-    <img src="assets/images/illustrations/retina.png" class="big-retina-illustration" src="" />
+    <div class="demo-content">
+      <div><img src="assets/images/icons/Toilet-Paper@@2x.png" alt="Toilet-Paper"></div>          
+      <div><img src="assets/images/icons/Gift-Box@@2x.png" alt="Gift-Box"></div>
+      <div><img src="assets/images/icons/Pensils@@2x.png" alt="Pensils"></div>
+      <div><img src="assets/images/icons/Clipboard@@2x.png" alt="Clipboard"></div>
+      <div><img src="assets/images/icons/Retina-Ready@@2x.png" alt="Retina-Ready"></div>
+      <div><img src="assets/images/icons/Compas@@2x.png" alt="Compas"></div>
+      <div><img src="assets/images/icons/Map@@2x.png" alt="Map"></div>
+      <div><img src="assets/images/icons/Chat@@2x.png" alt="Chat"></div>
+      <div><img src="assets/images/icons/Mail@@2x.png" alt="Mail"></div>
+      <div><img src="assets/images/icons/Book@@2x.png" alt="Book"></div>
+      <div><img src="assets/images/icons/Calendar@@2x.png" alt="Calendar"></div>
+      <div><img src="assets/images/icons/Pocket@@2x.png" alt="Pocket"></div>
+      <div><img src="assets/images/icons/Watches@@2x.png" alt="Watches"></div>
+      <div><img src="assets/images/icons/Infinity-Loop@@2x.png" alt="Infinity-Loop"></div>
+    </div>
   </div>
 
   <div class="demo-icons">
-    <h3 class="demo-panel-title">Glyphs <small>(20)</small></h3>
-    <div class="demo-icons-24">
-      <span class="fui-video-24"></span>
-      <span class="fui-time-24"></span>
-      <span class="fui-settings-24"></span>
-      <span class="fui-plus-24"></span>
-      <span class="fui-new-24"></span>
-      <span class="fui-menu-24"></span>
-      <span class="fui-man-24"></span>
-      <span class="fui-mail-24"></span>
-      <span class="fui-lock-24"></span>
-      <span class="fui-location-24"></span>
-      <span class="fui-heart-24"></span>
-      <span class="fui-eye-24"></span>
-      <span class="fui-cross-24"></span>
-      <span class="fui-cmd-24"></span>
-      <span class="fui-checkround-24"></span>
-      <span class="fui-checkmark-24"></span>
-      <span class="fui-calendar-24"></span>
-      <span class="fui-bubble-24"></span>
-      <span class="fui-volume-24"></span>
-      <span class="fui-camera-24"></span>
-      <span class="demo-icons-tooltip">24 pixel grid</span>
-    </div>
-
-    <div class="demo-icons-16">
-      <span class="fui-video-16"></span>
-      <span class="fui-time-16"></span>
-      <span class="fui-settings-16"></span>
-      <span class="fui-plus-16"></span>
-      <span class="fui-new-16"></span>
-      <span class="fui-menu-16"></span>
-      <span class="fui-man-16"></span>
-      <span class="fui-mail-16"></span>
-      <span class="fui-lock-16"></span>
-      <span class="fui-location-16"></span>
-      <span class="fui-heart-16"></span>
-      <span class="fui-eye-16"></span>
-      <span class="fui-cross-16"></span>
-      <span class="fui-cmd-16"></span>
-      <span class="fui-checkround-16"></span>
-      <span class="fui-checkmark-16"></span>
-      <span class="fui-calendar-16"></span>
-      <span class="fui-bubble-16"></span>
-      <span class="fui-volume-16"></span>
-      <span class="fui-camera-16"></span>
-      <span class="demo-icons-tooltip">16 pixel grid</span>
+    <h3 class="demo-panel-title">Glyphs <small>(30)</small></h3>
+    <div class="demo-content">
+      <span class="fui-arrow-right"></span>
+      <span class="fui-arrow-left"></span>
+      <span class="fui-cmd"></span>
+      <span class="fui-check-inverted"></span>
+      <span class="fui-heart"></span>
+      <span class="fui-location"></span>
+      <span class="fui-plus"></span>
+      <span class="fui-check"></span>
+      <span class="fui-cross"></span>
+      <span class="fui-list"></span>
+      <span class="fui-new"></span>
+      <span class="fui-video"></span>
+      <span class="fui-photo"></span>
+      <span class="fui-volume"></span>
+      <span class="fui-time"></span>
+      <span class="fui-eye"></span>
+      <span class="fui-chat"></span>
+      <span class="fui-search"></span>
+      <span class="fui-user"></span>
+      <span class="fui-mail"></span>
+      <span class="fui-lock"></span>
+      <span class="fui-gear"></span>
+      <span class="fui-radio-unchecked"></span>
+      <span class="fui-radio-checked"></span>
+      <span class="fui-checkbox-unchecked"></span>
+      <span class="fui-checkbox-checked"></span>
+      <span class="fui-calendar-solid"></span>
+      <span class="fui-pause"></span>
+      <span class="fui-play"></span>
+      <span class="fui-check-inverted-2"></span>
     </div>
   </div> <!-- /icon font row -->
 
@@ -599,7 +576,7 @@
         </div>
         <ul>
           <li class="todo-done">
-            <div class="todo-icon fui-man-24"></div>
+            <div class="todo-icon fui-user"></div>
             <div class="todo-content">
               <h4 class="todo-name">
                 Meet <strong>Adrian</strong> at <strong>6pm</strong>
@@ -609,7 +586,7 @@
           </li>
 
           <li>
-            <div class="todo-icon fui-menu-24"></div>
+            <div class="todo-icon fui-list"></div>
             <div class="todo-content">
               <h4 class="todo-name">
                 Chat with <strong>V.Kudinov</strong>
@@ -619,7 +596,7 @@
           </li>
 
           <li>
-            <div class="todo-icon fui-eye-24"></div>
+            <div class="todo-icon fui-eye"></div>
             <div class="todo-content">
               <h4 class="todo-name">
                 Watch <strong>Iron Man</strong>
@@ -629,7 +606,7 @@
           </li>
 
           <li>
-            <div class="todo-icon fui-time-24"></div>
+            <div class="todo-icon fui-time"></div>
             <div class="todo-content">
               <h4 class="todo-name">
                 Fix bug on a <strong>Website</strong>
@@ -663,37 +640,37 @@
   <div class="row demo-tiles">
     <div class="span3">
       <div class="tile">
-        <img class="tile-image big-illustration" alt="" src="assets/images/illustrations/compass.png" />
+        <img src="assets/images/icons/Compas@@2x.png" alt="Compas@@2x" class="tile-image big-illustration">
         <h3 class="tile-title">Web Oriented</h3>
         <p>100% convertable to HTML/CSS layout.</p>
-        <a class="btn btn-primary btn-large btn-block" href="#">Get Pro</a>
+        <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
       </div>
     </div>
 
     <div class="span3">
       <div class="tile">
-        <img class="tile-image" alt="" src="assets/images/illustrations/infinity.png" />
+        <img src="assets/images/icons/Infinity-Loop@@2x.png" alt="Infinity-Loop@@2x" class="tile-image">
         <h3 class="tile-title">Easy to Customize</h3>
         <p>Vector-based shapes and minimum of layer styles.</p>
-        <a class="btn btn-primary btn-large btn-block" href="#">Get Pro</a>
+        <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
       </div>
     </div>
 
     <div class="span3">
       <div class="tile">
-        <img class="tile-image" alt="" src="assets/images/illustrations/colors.png" />
+        <img src="assets/images/icons/Pensils@@2x.png" alt="Pensils@@2x" class="tile-image">
         <h3 class="tile-title">Color Swatches</h3>
         <p>Easy to add or change elements. </p>
-        <a class="btn btn-primary btn-large btn-block" href="#">Get Pro</a>
+        <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
       </div>
     </div>
 
     <div class="span3">
       <div class="tile tile-hot">
-        <img class="tile-image big-illustration" alt="" src="assets/images/illustrations/share.png" />
+        <img src="assets/images/icons/Chat@@2x.png" alt="Chat@@2x" class="tile-image">
         <h3 class="tile-title">Free for Share</h3>
         <p>Your likes, shares and comments helps us.</p>
-        <a class="btn btn-primary btn-large btn-block" href="#">Get Pro</a>
+        <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
       </div>
 
     </div>
@@ -709,12 +686,12 @@
       <div class="login-form">
         <div class="control-group">
           <input type="text" class="login-field" value="" placeholder="Enter your name" id="login-name" />
-          <label class="login-field-icon fui-man-16" for="login-name"></label>
+          <label class="login-field-icon fui-user" for="login-name"></label>
         </div>
 
         <div class="control-group">
           <input type="password" class="login-field" value="" placeholder="Password" id="login-pass" />
-          <label class="login-field-icon fui-lock-16" for="login-pass"></label>
+          <label class="login-field-icon fui-lock" for="login-pass"></label>
         </div>
 
         <a class="btn btn-primary btn-large btn-block" href="#">Login</a>
@@ -760,6 +737,7 @@
       <p class="demo-download-text">Your likes, shares and comments make us happy!</p>
     </div>
   </div> <!-- /download area -->
+
 
 </div> <!-- /container -->
 }

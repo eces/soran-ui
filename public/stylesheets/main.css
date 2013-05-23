@@ -40,13 +40,13 @@ a {
   text-decoration: none;
 }
 ::selection {
-  background: #C3CF98;
+  background: #1ABC9C;
   /* Safari */
 
   color: #fff;
 }
 ::-moz-selection {
-  background: #C3CF98;
+  background: #1ABC9C;
   /* Firefox */
 
   color: #fff;
@@ -162,11 +162,19 @@ table#listen thead tr td:nth-child(4) {
 table#listen tbody {
   font-size: 9pt;
 }
+table#listen tbody tr:nth-child(2n) {
+  background-color: #ECF0F1;
+}
+table#listen tbody tr:nth-child(2n).checked td {
+  border-color: #4f6f8f;
+  background-color: #587ca0 !important;
+}
 table#listen tbody tr td {
   border-color: #e5e5e5;
 }
 table#listen tbody tr td:nth-child(1) {
   width: 50%;
+  padding-left: 15px;
 }
 table#listen tbody tr td:nth-child(2) {
   width: 20%;
@@ -181,10 +189,13 @@ table#listen tbody tr td:nth-child(3) {
   width: 20%;
 }
 table#listen tbody tr td:nth-child(4) {
-  color: #2C3E50;
+  color: #7F8C8D;
   text-align: center;
   font-family: "bebas-neue", "museo-sans", 'Lato', 'Helvetica Neue', Helvetica, 'Apple SD Gothic Neo', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif;
   font-size: 13pt;
+}
+table#listen tbody tr:hover {
+  cursor: pointer;
 }
 table#listen tbody tr:hover a {
   color: #16A085 !important;
@@ -192,6 +203,21 @@ table#listen tbody tr:hover a {
 table#listen tbody tr:hover a:hover,
 table#listen tbody tr:hover a:focus {
   color: #1ABC9C;
+}
+table#listen tbody tr.checked td {
+  background-color: #7795b4;
+  border-color: #6789ab;
+  color: #fff;
+}
+table#listen tbody tr.checked td a {
+  color: #fff;
+}
+table#listen tbody tr.checked:hover a {
+  color: #fff !important;
+}
+table#listen tbody tr.checked:hover a:hover,
+table#listen tbody tr.checked:hover a:focus {
+  color: #fff;
 }
 footer {
   margin-top: 40px;

@@ -21,11 +21,11 @@ a {
 }
 
 ::selection {
-  background: #C3CF98; /* Safari */
+  background: #1ABC9C; /* Safari */
   color: #fff;
   }
 ::-moz-selection {
-  background: #C3CF98; /* Firefox */
+  background: #1ABC9C; /* Firefox */
   color: #fff;
 }
 
@@ -142,11 +142,19 @@ table#listen {
   tbody {
     font-size: 9pt;
     tr {
+      &:nth-child(2n) {
+        background-color: #ECF0F1;
+        &.checked td {
+          border-color: lighten(#34495E, 15%);
+          background-color: lighten(#34495E, 20%) !important;
+        }
+      }
       td {
         border-color: #e5e5e5;
       }
       td:nth-child(1) {
         width: 50%;
+        padding-left: 15px;
       }
       td:nth-child(2) {
         a { 
@@ -161,18 +169,37 @@ table#listen {
         width: 20%;
       }
       td:nth-child(4) {
-        color: #2C3E50;
+        color: #7F8C8D;
         text-align: center;
         // font-weight: bold;
         .typo-number();
         font-size: 13pt;
       }
       &:hover {
+        cursor: pointer;
         a {
           color: #16A085 !important;
           &:hover, &:focus {
             color: #1ABC9C;
           }
+        }
+      }
+      &.checked {
+        td {
+          background-color: lighten(#34495E, 30%);
+          border-color: lighten(#34495E, 25%);
+          color: #fff;
+          a {
+            color: #fff;
+          }
+        }
+        &:hover {
+          a {
+            color: #fff !important;
+            &:hover, &:focus {
+              color: #fff;
+            }
+          }   
         }
       }
     }
