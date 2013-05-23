@@ -133,6 +133,7 @@ img.brand-logo:hover {
   margin: 10px 0;
 }
 table#listen {
+  font-family: 'museo-sans', 'Helvetica Neue', Helvetica, 'Apple SD Gothic Neo', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif;
   margin-top: 20px;
 }
 table#listen a {
